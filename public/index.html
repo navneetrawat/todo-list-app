@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- media queries -->
+    <link rel="stylesheet" href="./css/media.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body>
+ <!-- Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal_content">
+            <div class="modal_header">
+                <span class="closeBtn"><i class="fas fa-times"></i></span>
+                <h1 class="">Update <span class="modal_span">Todo</span></h1>
+            </div>
+            <div class="modal_body">
+                <form class="modal_form">
+                    <input type="text" name="updateId" id="updateId" hidden>
+                    <div class="form_control">
+                        <label for="update">Enter New Todo</label>
+                        <input type="text" name="name" class="updateName" size="35%" placeholder="e.g. Daily Schedule" required>
+                    </div>
+                    <button type="submit" class="updateBtn">Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container_1 -->
+    <div class="container_1">
+        <h1 class="todo_heading">Todo-List <span class="todo_span">App</span></h1>
+        <form class= "form_element">
+            <input type="text" name="todo" id="todo" placeholder="e.g. Daily Schedule" size="26%" required>
+            <button type="submit" class="click_btn">Add Todo</button>
+        </form>
+    </div>
+
+    <!-- Container_2  -->
+     <div class="container_2">
+         <h1 class="todo_progress_bar">Loading Todos...</h1>
+         <div class="todo_parent"></div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

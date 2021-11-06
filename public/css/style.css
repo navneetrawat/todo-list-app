@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(134, 134, 134);
+}
+/* Modal css */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(0, 0 ,0 ,0.8);
+}
+.modal_content {
+    background: #f4f4f4;
+    margin: 9.2% auto;
+    padding: 20px;
+    width: 60%;
+    height: 30vh;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.13);
+}
+.modal_header {
+    font-size: 1rem;
+    color: rgb(73, 72, 72);
+    letter-spacing: 6px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.modal_span{
+    color: rgb(104, 163, 197);
+}
+.closeBtn{
+    float: right;
+    color: rgb(134, 134, 134);
+    font-size: 25px;
+    padding-left: 5px;
+}
+.closeBtn:hover, .closeBtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal_form{
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5%;
+}
+label{ 
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 14px;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.updateName{
+    border:2px solid rgb(100, 100, 100);
+}
+.updateBtn{
+    margin-left: 7%;
+    width: 7rem;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(99, 157, 190);
+    border-radius: 3px;
+    color: white;
+    font-size: 17px;
+    letter-spacing: 3px;
+}
+.updateBtn:hover{
+    background-color: rgb(55, 68, 129);
+    color: white;
+}
+/* Container_1 css */
+.container_1{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 40vh;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.todo_heading{
+    font-size: 2.1rem;
+    color: rgb(73, 72, 72);
+    letter-spacing: 6px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.todo_span{
+    color: rgb(104, 163, 197);
+}
+.form_element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    border:1px solid rgb(189, 187, 187);
+    height: 32px;
+    outline: none;
+    background-color: rgb(241, 235, 255);
+    padding: 10px;  
+    margin: 6px auto;
+    border-radius: 3px;
+}
+::placeholder{
+    color: rgb(156, 153, 156);
+}
+.click_btn{
+    width: 7rem;
+    margin-top:12px;
+    padding: 7px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(99, 157, 190);
+    border-radius: 3px;
+    color: white;
+}
+.click_btn:hover{
+    background-color: rgb(55, 68, 129);
+    color: white;
+}
+/* Container_2 css */
+.container_2{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: -3.4rem;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.todo_progress_bar{
+    font-size : 1.6rem;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(65, 64, 66);
+    background-color: rgb(232, 230, 235);
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.todo_parent {
+    width: 100%;
+    background-color: rgb(232, 230, 235);
+    border-radius: 10px;
+    color: rgb(84, 101, 146);
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.todos{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    padding: 6px;
+    margin:7px;
+}
+ .todo_list{
+    display: flex;
+    width: 50%;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+.fa-list-ul{
+    position: relative;
+    top: 2px;
+    right: 8px;
+    color: rgb(72, 151, 126);
+}
+.todo{
+    padding-left: 10px;
+}
+.action{
+    display: flex;
+    width: 50%;
+    border-radius: 10px;
+    padding-left: 20.5rem;
+}
+.update{    
+    cursor: pointer;
+    padding: 2px 5px;
+    color: rgb(66, 114, 99);
+    border-radius: 50%;
+}
+.delete{
+    cursor: pointer;
+    font-size: 15px;
+    padding: 2px 6px;
+    margin-left: 10px;
+    color: rgb(66, 114, 99);
+    border-radius: 50%;
+}
+.update:hover, .delete:hover{
+    color: rgb(255, 66, 66);
+}
